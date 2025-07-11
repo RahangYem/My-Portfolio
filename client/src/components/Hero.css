@@ -51,6 +51,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  perspective: 1000px;
 }
 
 .image-placeholder {
@@ -66,6 +67,32 @@
   font-weight: 600;
   box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
   overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.image-placeholder::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #667eea, #764ba2, #667eea);
+  background-size: 300% 300%;
+  animation: gradientShift 4s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 .image-placeholder img {
@@ -73,6 +100,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 768px) {
