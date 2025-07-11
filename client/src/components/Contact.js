@@ -47,13 +47,13 @@ const Contact = () => {
             </p>
             <div className="contact-details">
               <div className="contact-item">
-                <strong>Email:</strong> your-email@example.com
+                <strong>Email:</strong> yemrahang@gmail.com
               </div>
               <div className="contact-item">
                 <strong>Phone:</strong> +1 (555) 123-4567
               </div>
               <div className="contact-item">
-                <strong>Location:</strong> Your City, Country
+                <strong>Location:</strong> California, USA
               </div>
             </div>
           </div>

@@ -13,9 +13,9 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="hero-title">
-              Hi, I'm <span className="highlight">Your Name</span>
+              Hi, I'm <span className="highlight">RAHANG</span>
             </h1>
-            <h2 className="hero-subtitle">Full Stack Developer</h2>
+            <h2 className="hero-subtitle">Junior Developer</h2>
             <p className="hero-description">
               I create beautiful and functional web applications using modern technologies
               like React, Node.js, and more. Let's build something amazing together!
@@ -33,7 +33,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="image-placeholder">
-              <span>Your Photo</span>
+              <img src="/myself.jpg" alt="Rahang" />
             </div>
           </motion.div>
         </div>
