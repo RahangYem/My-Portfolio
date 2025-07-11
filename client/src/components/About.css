@@ -1,0 +1,41 @@
+.about {
+  background: #1e293b;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: #cbd5e1;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.stat {
+  padding: 1.5rem;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.stat h3 {
+  font-size: 2rem;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.stat p {
+  color: #94a3b8;
+  font-weight: 500;
+}
